@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narahari Educational - Aerospace and General Information</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .header-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        nav {
+            background: #f8f9fa;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #1e3c72;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            color: #1e3c72;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #1e3c72;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .content-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            transition: transform 0.3s;
+        }
+
+        .content-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            margin-bottom: 1rem;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .resource-link {
+            display: block;
+            padding: 1rem;
+            background: #f8f9fa;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+            text-decoration: none;
+            color: #333;
+            transition: background 0.3s;
+        }
+
+        .resource-link:hover {
+            background: #e9ecef;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+
+            .header-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="header-title">Narahari Educational</h1>
+        <p>Excellence in Aerospace Education</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#videos">Video Lectures</a></li>
+            <li><a href="#presentations">Presentations</a></li>
+            <li><a href="#resources">PDF Resources</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="content-card">
+                <h3>Dr. Narahari</h3>
+                <p>Welcome to my educational platform! I am a passionate aerospace educator with extensive experience in both academic and industry settings. My mission is to make complex aerospace concepts accessible to students worldwide.</p>
+                
+                <h4 style="color: #1e3c72; margin-top: 1.5rem; margin-bottom: 0.5rem;">Education & Expertise</h4>
+                <ul style="list-style-position: inside; margin-bottom: 1rem;">
+                    <li>Ph.D. in Aerospace Engineering</li>
+                    <li>Specialization in Aerodynamics and Aircraft Design</li>
+                    <li>15+ years of teaching experience</li>
+                    <li>Industry consultant for major aerospace companies</li>
+                </ul>
+
+                <h4 style="color: #1e3c72; margin-top: 1.5rem; margin-bottom: 0.5rem;">Teaching Philosophy</h4>
+                <p>I believe in combining theoretical knowledge with practical applications to provide a comprehensive learning experience. My courses are designed to help students develop both technical expertise and problem-solving skills.</p>
+
+                <h4 style="color: #1e3c72; margin-top: 1.5rem; margin-bottom: 0.5rem;">Contact Information</h4>
+                <p>Email: contact@naraharieducational.com<br>
+                Office Hours: Monday-Friday, 9:00 AM - 5:00 PM EST</p>
+            </div>
+        </section>
+
+        <section id="videos">
+            <h2 class="section-title">Video Lectures</h2>
+            <div class="content-grid">
+                <div class="content-card">
+                    <div class="video-container">
+                        <!-- Replace with your YouTube video embed code -->
+                        <iframe src="about:blank" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3>Introduction to Aerodynamics</h3>
+                    <p>Learn the fundamental principles of aerodynamics and fluid mechanics.</p>
+                </div>
+                <!-- Add more video cards as needed -->
+            </div>
+        </section>
+
+        <section id="presentations">
+            <h2 class="section-title">PowerPoint Presentations</h2>
+            <div class="content-grid">
+                <div class="content-card">
+                    <a href="#" class="resource-link">
+                        <h3>Aircraft Design Basics</h3>
+                        <p>Comprehensive overview of aircraft design principles</p>
+                    </a>
+                </div>
+                <!-- Add more presentation cards as needed -->
+            </div>
+        </section>
+
+        <section id="resources">
+            <h2 class="section-title">PDF Resources</h2>
+            <div class="content-grid">
+                <div class="content-card">
+                    <a href="#" class="resource-link">
+                        <h3>Aerospace Engineering Fundamentals</h3>
+                        <p>Essential concepts and formulas for aerospace engineering</p>
+                    </a>
+                </div>
+                <!-- Add more PDF resource cards as needed -->
+            </div>
+        </section>
+    </div>
+</body>
+</html>
